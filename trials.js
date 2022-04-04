@@ -139,6 +139,7 @@ function longestWordLength(words) {
   return longest;
 }
 
+
 // Truncate repeating characters into one character.
 //
 // Ex.:
@@ -158,6 +159,7 @@ function truncate(string) {
 
   return result.join('');
 }
+
 
 // Return true if all parentheses in a given string are balanced.
 //
@@ -186,7 +188,9 @@ function hasBalancedParens(string) {
   }
 
   return parens === 0;
-}
+}  
+
+
 
 // Return a compressed version of the given string.
 //

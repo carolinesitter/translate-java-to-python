@@ -72,16 +72,46 @@ def snake_to_camel(string):
 
 
 def longest_word_length(words):
-    pass  # TODO: replace this line with your code
+    # returns the length of the longest word in the list
 
+    longest = len(words[0])
+
+    for word in words:
+        if longest < len(word):
+            longest = len(word)
+
+    return longest
 
 def truncate(string):
-    pass  # TODO: replace this line with your code
+    # truncate characters in string so they only appear once
 
+    result = []
+
+    for char in string:
+        if len(result) == 0 or char != result[-1]:
+        result.append(char)
+
+    return "".join(result)
 
 def has_balanced_parens(string):
-    pass  # TODO: replace this line with your code
+    # check to see if a string has balanced parenthesis
+    # return True if it does, and False if not 
+    
+    parens = 0
+
+    for char in string:
+        if char == "(":
+            parens += 1
+        elif char == ")":
+            parens -= 1
+
+            if parens < 0:
+                return False
+
+    return parens == 0
+
 
 
 def compress(string):
     pass  # TODO: replace this line with your code
+    
