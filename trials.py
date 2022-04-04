@@ -2,13 +2,13 @@
 
 
 def output_all_items(items):
-    # #pass  # create for loop, iterate through items
+    # create for loop, iterate through items
     for item in items:
         print(item)
 
 
 def get_all_evens(nums):
-    #pass  # create empty list and for loop for even numbers
+    # create empty list and for loop for even numbers
     even_numbers = []
 
     for num in nums:
@@ -18,7 +18,7 @@ def get_all_evens(nums):
 
 
 def get_odd_indices(items):
-    #pass  # iterate through items and return odd index
+    # iterate through items and return odd index
     result = []
     for idx in range(len(items)):
         if idx % 2 != 0:
@@ -28,7 +28,7 @@ def get_odd_indices(items):
 
 
 def print_as_numbered_list(items):
-    #pass  # create a numbered list of items
+    # create a numbered list of items
     i = 1
 
     for item in items:
@@ -37,15 +37,38 @@ def print_as_numbered_list(items):
 
 
 def get_range(start, stop):
-    pass  # TODO: replace this line with your code
+    # returns a list of each number between start and stop
+    nums = []
+
+    for num in range(start,stop):
+        nums.append(num)
+
+    return nums
 
 
 def censor_vowels(word):
-    pass  # TODO: replace this line with your code
+    # replaces vowels in a word with *, leaves nonvowels alone
+
+    chars = []
+
+    for letter in word:
+        if letter in "aeiou":
+            chars.append("*")
+        else:
+            chars.append(letter)
+
+    return "".join(chars)
 
 
 def snake_to_camel(string):
-    pass  # TODO: replace this line with your code
+    # make list full of camel case 
+    camelCase = []
+
+    for word in string.split("_"):
+        camelCase.append(f"{word[0].upper()}{word[1:]}")
+
+    return "".join(camelCase)
+    
 
 
 def longest_word_length(words):

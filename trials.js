@@ -81,6 +81,7 @@ function getRange(start, stop) {
   return nums;
 }
 
+
 // Given a string, return a string where vowels are replaced with '*'.
 //
 // Ex.:
@@ -100,6 +101,7 @@ function censorVowels(word) {
   return chars.join('');
 }
 
+
 // Given a string in snake case, return a string in upper camel case.
 //
 // Ex.:
@@ -114,6 +116,8 @@ function snakeToCamel(string) {
 
   return camelCase.join('');
 }
+
+
 
 // Return the length of the longest word in the given array of words.
 //
